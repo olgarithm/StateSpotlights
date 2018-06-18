@@ -4,7 +4,108 @@
 <div id="container" style="width: 1000px; height: 700px;"></div>
 <script>
     var map = new Datamap({
+    	geographyConfig: {
+    		highlightFillColor: '#3CB371',
+    		highlightBorderColor: 'white',
+        	highlightBorderWidth: 2,
+    	},
         element: document.getElementById('container'),
-        scope: 'usa'
+        scope: 'usa',
+        fills: {
+            UNVISITED: 'gray',
+            defaultFill: '#90EE90'
+        },
+        data: {
+            TX: {
+                fillKey: 'UNVISITED'
+            },
+            PA: {
+                fillKey: 'UNVISITED'
+            },
+            MI: {
+                fillKey: 'UNVISITED'
+            },
+            NC: {
+                fillKey: 'UNVISITED'
+            },
+            OH: {
+                fillKey: 'UNVISITED'
+            },
+            IL: {
+                fillKey: 'UNVISITED'
+            },
+            CO: {
+                fillKey: 'UNVISITED'
+            },
+            MA: {
+                fillKey: 'UNVISITED'
+            },
+            MN: {
+                fillKey: 'UNVISITED'
+            },
+            MO: {
+                fillKey: 'UNVISITED'
+            },
+            SC: {
+                fillKey: 'UNVISITED'
+            },
+            WI: {
+                fillKey: 'UNVISITED'
+            },
+            CT: {
+                fillKey: 'UNVISITED'
+            },
+            UT: {
+                fillKey: 'UNVISITED'
+            },
+            ND: {
+                fillKey: 'UNVISITED'
+            },
+            SD: {
+                fillKey: 'UNVISITED'
+            },
+            IA: {
+                fillKey: 'UNVISITED'
+            },
+            IN: {
+                fillKey: 'UNVISITED'
+            },
+            KY: {
+                fillKey: 'UNVISITED'
+            },
+            AR: {
+                fillKey: 'UNVISITED'
+            },
+            WV: {
+                fillKey: 'UNVISITED'
+            },
+            VT: {
+                fillKey: 'UNVISITED'
+            },
+            OK: {
+                fillKey: 'UNVISITED'
+            },
+            AK: {
+                fillKey: 'UNVISITED'
+            },
+            NH: {
+                fillKey: 'UNVISITED'
+            },
+            ME: {
+                fillKey: 'UNVISITED'
+            },
+            NE: {
+                fillKey: 'UNVISITED'
+            },
+            NM: {
+                fillKey: 'UNVISITED'
+            },
+            RI: {
+                fillKey: 'UNVISITED'
+            }
+        },
+
+    // Draw a legend for this map
     });
+    map.legend();
 </script>
